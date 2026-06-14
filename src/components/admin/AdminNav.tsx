@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
-import { ShoppingBag, Package, ClipboardList, LayoutDashboard, LogOut, Menu, X, ExternalLink } from 'lucide-react'
+import { ShoppingBag, Package, ClipboardList, LayoutDashboard, LogOut, Menu, X, ExternalLink, Users } from 'lucide-react'
 import { useState } from 'react'
 import toast from 'react-hot-toast'
 
@@ -9,6 +9,7 @@ const navItems = [
   { href: '/admin', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/admin/products', label: 'Products', icon: Package },
   { href: '/admin/orders', label: 'Orders', icon: ClipboardList },
+  { href: '/admin/visitors', label: 'Visitors', icon: Users },
 ]
 
 export default function AdminNav() {
